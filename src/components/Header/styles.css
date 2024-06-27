@@ -1,0 +1,69 @@
+/* Header styles */
+
+.lp-header {
+  border: solid #5fe077;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.lp-header img {
+  max-height: 50px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #5fe077;
+}
+
+.lp-header-nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.lp-header-nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.lp-header-nav-logo img {
+  max-height: 50px;
+  width: auto;
+}
+
+@media (min-width: 600px) {
+  .lp-header-nav-logo img {
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .lp-header-nav-links {
+    gap: 10px; /* Reduzindo o gap entre os links */
+  }
+
+  .lp-header-nav-logo img {
+    max-height: 40px; /* Ajustando o tamanho do logo para telas menores */
+  }
+
+  nav a {
+    font-size: 13px; /* Ajustando o tamanho da fonte para telas menores */
+  }
+}

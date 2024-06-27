@@ -1,0 +1,45 @@
+.lp-services {
+    padding: 50px 0;
+    background-color: black;
+  }
+  
+  .lp-services h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  .lp-services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .lp-service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .lp-service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .lp-service-card p {
+    margin-top: 15px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .lp-service-card .fa-icon {
+    color: #5fe077;
+    
+  }
+  
