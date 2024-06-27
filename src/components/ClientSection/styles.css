@@ -22,7 +22,7 @@
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    width: 200px;
+    width: 300px; /* Aumentei o tamanho dos cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
   }
@@ -42,5 +42,19 @@
     color: #333;
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 10px; /* Adicionei margem inferior */
+  }
+  
+  .lp-client-card blockquote {
+    color: #666;
+    font-style: italic;
+    font-size: 14px;
+    margin: 10px 0 0; /* Ajustei a margem para o bloco de citação */
+  }
+  
+  @media (min-width: 768px) {
+    .lp-client-card {
+      width: 350px; /* Aumentei ainda mais o tamanho dos cards em telas maiores */
+    }
   }
   

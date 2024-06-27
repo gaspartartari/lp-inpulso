@@ -45,3 +45,31 @@ body {
     padding: 0 20px;
   }
 }
+
+/* Animações */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lp-services, .lp-clients {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.lp-service-card, .lp-client-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.lp-service-card.visible, .lp-client-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
