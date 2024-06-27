@@ -1,0 +1,46 @@
+.lp-clients {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .lp-clients h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .lp-clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .lp-client-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .lp-client-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .lp-client-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .lp-client-card p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  

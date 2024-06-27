@@ -1,7 +1,7 @@
 /* Header styles */
 
 .lp-header {
-
+  background-color: black;
   height: 90px;
   display: flex;
   justify-content: space-between;

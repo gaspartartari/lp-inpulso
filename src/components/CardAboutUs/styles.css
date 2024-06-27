@@ -60,3 +60,19 @@
       text-align: left;
     }
   }
+
+  .lp-partner a {
+    display: block;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .lp-partner a .fa-icon {
+    color: #0077B5; /* Cor do ícone do LinkedIn */
+    transition: color 0.3s;
+  }
+  
+  .lp-partner a:hover .fa-icon {
+    color: #005582; /* Cor ao passar o mouse */
+  }
+  
