@@ -1,63 +1,67 @@
 @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
-  
-  @keyframes slideIn {
-    0% {
-      transform: translateY(-20px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  @keyframes rotateIn {
-    0% {
-      transform: rotate(-10deg);
-      opacity: 0;
-    }
-    100% {
-      transform: rotate(0deg);
-      opacity: 1;
-    }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
   }
-  
-  .lp-main-text h1 {
-    color: white;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 20px;
-    font-size: 30px;
-    font-weight: 700;
-    animation: fadeIn 2s ease-in-out, slideIn 2s ease-in-out;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .lp-main-text h1:hover {
-    color: #5fe077;
-    transform: scale(1.1);
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(-10deg);
+    opacity: 0;
   }
-  
-  .lp-main-text h2 {
-    color: white;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 400;
-    justify-content: center;
-    padding: 0 90px;
-    animation: fadeIn 3s ease-in-out, rotateIn 3s ease-in-out;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
   }
-  
-  .lp-main-text h2:hover {
-    color: #5fe077;
-    transform: scale(1.05) rotate(2deg);
-  }
-  
+}
+
+.lp-main-text h1 {
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  animation: fadeIn 2s ease-in-out, slideIn 2s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.lp-main-text h1:hover {
+  color: #5fe077;
+  transform: scale(1.1);
+}
+
+.lp-main-text h2 {
+  color: black;
+  background-color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+  animation: fadeIn 3s ease-in-out, rotateIn 3s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.lp-main-text h2:hover {
+  color: #5fe077;
+  transform: scale(1.05) rotate(2deg);
+}
