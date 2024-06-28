@@ -1,0 +1,46 @@
+.lp-investment-counter {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+    color: white;
+   
+  }
+  
+  .lp-investment-counter h2 {
+    color: black;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+  
+  .lp-counter {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    background: #5fe077;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  @media (min-width: 768px) {
+    .lp-counter {
+      font-size: 48px;
+    }
+  
+    .lp-investment-counter h2 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .lp-counter {
+      font-size: 60px;
+    }
+  
+    .lp-investment-counter h2 {
+      font-size: 32px;
+    }
+  }
+  

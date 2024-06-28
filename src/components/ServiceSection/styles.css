@@ -1,50 +1,104 @@
 .lp-services {
-    padding: 20px 0;
-    background-color: white;
-  }
-  
+  padding: 50px 0px;
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+  text-align: center;
+  color: black;
+}
+
+.lp-services h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 20px;
+}
+
+.lp-services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.lp-service-card {
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 260px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, border 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.lp-service-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.lp-service-card:hover {
+  transform: translateY(-10px);
+  border: 2px solid #5fe077;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lp-service-card p {
+  margin-top: 15px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lp-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.lp-icons .fa-icon {
+  color: #5fe077 !important;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
   .lp-services h2 {
-    text-align: center;
-    color: black;
-    margin-bottom: 30px;
+    font-size: 32px;
   }
-  
-  .lp-services-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
+
   .lp-service-card {
-    background: white;
-    border: 1px solid #5fe077;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    width: 300px;
+    padding: 30px;
   }
-  
-  .lp-service-card:hover {
-    transform: translateY(-10px);
-  }
-  
+
   .lp-service-card p {
-    margin-top: 15px;
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
   }
-  
+
   .lp-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 20px;
   }
-  
-  .lp-icons .fa-icon {
-    color: black !important;
+}
+
+@media (min-width: 1024px) {
+  .lp-services h2 {
+    font-size: 36px;
   }
+
+  .lp-service-card {
+    width: 350px;
+    padding: 40px;
+  }
+
+  .lp-service-card p {
+    font-size: 22px;
+  }
+
+  .lp-icons {
+    gap: 30px;
+  }
+}

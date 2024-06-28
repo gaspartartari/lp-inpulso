@@ -1,99 +1,76 @@
-.lp-about-us {
+.lp-highlights {
     padding: 50px 0;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     text-align: center;
     color: #333;
   }
   
-  .lp-about-us h2 {
+  .lp-highlights h2 {
     color: #333;
     margin-bottom: 30px;
     font-size: 28px;
     font-weight: 700;
   }
   
-  .lp-about-us-content {
+  .lp-highlights-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
   }
   
-  .lp-partner-card {
+  .lp-highlight {
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
   }
   
-  .lp-partner-card:hover {
+  .lp-highlight:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
   
-  .lp-partner-card img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 2px solid #5fe077;
-    margin-bottom: 10px;
-  }
-  
-  .lp-partner-card h3 {
+  .lp-highlight h3 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
     color: #5fe077;
   }
   
-  .lp-partner-card p {
+  .lp-highlight p {
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 15px;
-  }
-  
-  .lp-partner-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #0077B5;
-    font-size: 16px;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .lp-partner-card a:hover {
-    color: #005582;
   }
   
   @media (min-width: 768px) {
-    .lp-about-us h2 {
+    .lp-highlights h2 {
       font-size: 32px;
     }
   
-    .lp-partner-card h3 {
+    .lp-highlight h3 {
       font-size: 22px;
     }
   
-    .lp-partner-card p {
+    .lp-highlight p {
       font-size: 18px;
     }
   }
   
   @media (min-width: 1024px) {
-    .lp-about-us h2 {
+    .lp-highlights h2 {
       font-size: 36px;
     }
   
-    .lp-partner-card h3 {
+    .lp-highlight h3 {
       font-size: 24px;
     }
   
-    .lp-partner-card p {
+    .lp-highlight p {
       font-size: 20px;
     }
   }

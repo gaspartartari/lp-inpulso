@@ -5,7 +5,11 @@ import client2Image from '../../assets/cliente2.jpg';
 import client3Image from '../../assets/cliente3.jpg';
 import client4Image from '../../assets/cliente4.jpg';
 
+
+
 export default function ClientsSection() {
+
+
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -33,7 +37,7 @@ export default function ClientsSection() {
                             "A empresa tem sido fundamental para o crescimento do nosso negócio. Excelente serviço!"
                         </blockquote>
                     </div>
-                    <div className='lp-client-card'>
+                    <div data-aos="fade-up" className='lp-client-card'>
                         <img src={client2Image} alt='Cliente 2' />
                         <p>Soleah</p>
                         <blockquote>

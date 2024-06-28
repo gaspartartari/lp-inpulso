@@ -1,0 +1,27 @@
+.lp-whatsapp-button {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    align-items: center;
+    justify-content: center;
+    margin-left:  40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .lp-whatsapp-button:hover {
+    background-color: #20b358;
+    transform: scale(1.05);
+  }
+  
+  .lp-whatsapp-button:active {
+    transform: scale(0.95);
+  }
+  

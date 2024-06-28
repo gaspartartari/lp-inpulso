@@ -52,9 +52,18 @@
     margin: 10px 0 0; /* Ajustei a margem para o bloco de citação */
   }
   
+  /* Media Queries */
   @media (min-width: 768px) {
     .lp-client-card {
       width: 350px; /* Aumentei ainda mais o tamanho dos cards em telas maiores */
+      padding: 30px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .lp-client-card {
+      width: 400px; /* Aumentei ainda mais o tamanho dos cards em telas maiores */
+      padding: 40px;
     }
   }
   
