@@ -1,0 +1,36 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    animation: scroll 5s linear infinite;
+    align-items: center;
+}
+
+.carousel-item {
+    max-width: 100px; /* Ajuste conforme necessário */
+    flex-shrink: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

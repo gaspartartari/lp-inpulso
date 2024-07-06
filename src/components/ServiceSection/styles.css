@@ -1,5 +1,5 @@
 .lp-services {
-  padding: 50px 0px;
+  padding: 50px 20px;
   background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
   text-align: center;
   color: black;
@@ -10,7 +10,6 @@
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
   padding: 0 20px;
 }
@@ -30,14 +29,30 @@
   text-align: center;
   width: 260px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, border 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, border 0.3s, box-shadow 0.3s, opacity 0.3s;
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(20px);
 }
 
 .lp-service-card.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.lp-service-card.shake {
+  animation: shake 1.5s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
 }
 
 .lp-service-card:hover {

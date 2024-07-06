@@ -2,26 +2,31 @@ import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './styles.css';
 import { faFacebook, faGoogle, faLinkedin, faPinterest, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { faShoppingCart, faTags } from '@fortawesome/free-solid-svg-icons';
-
-
+import { faHandshake, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 export default function ServicesSection() {
     useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+        const cards = document.querySelectorAll('.lp-service-card');
+        let index = 0;
+
+        function animateCards() {
+            cards.forEach((card, i) => {
+                card.classList.remove('shake');
+                if (i === index) {
+                    card.classList.add('shake');
                 }
             });
+            index = (index + 1) % cards.length;
+        }
+
+        // Adiciona a classe 'visible' a todos os cards após a montagem
+        cards.forEach(card => {
+            card.classList.add('visible');
         });
 
-        const serviceCards = document.querySelectorAll('.lp-service-card');
-        serviceCards.forEach(card => {
-            observer.observe(card);
-        });
+        const interval = setInterval(animateCards, 1000); // Troca de card a cada 1 segundo
+        return () => clearInterval(interval);
     }, []);
-
 
     return (
         <section className='lp-services'>
@@ -38,11 +43,11 @@ export default function ServicesSection() {
                         </div>
                         <p>Mídia Paga</p>
                     </div>
-                    <div  className='lp-service-card'>
-                        <div  className="lp-icons">
-                            <FontAwesomeIcon icon={faTags} size="2x" className="fa-icon" />
+                    <div className='lp-service-card'>
+                        <div className="lp-icons">
+                        <FontAwesomeIcon icon={faHandshake} size="2x" className="fa-icon" />
                         </div>
-                        <p>Traqueamento com (Google Tag Manager)</p>
+                        <p>Consultoria e Planejamento</p>
                     </div>
                     <div className='lp-service-card'>
                         <div className="lp-icons">

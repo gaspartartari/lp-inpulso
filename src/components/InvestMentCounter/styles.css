@@ -1,13 +1,13 @@
 .lp-investment-counter {
     padding: 50px 0;
-    background-color: white;
+    background-color: black;
     text-align: center;
     color: white;
    
   }
   
   .lp-investment-counter h2 {
-    color: black;
+    color: white;
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 600;

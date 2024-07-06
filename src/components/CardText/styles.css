@@ -1,64 +1,94 @@
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+.lp-main-text {
+  text-align: center;
+  padding: 25px 20px;
+  background: linear-gradient(135deg, #5f7fe00f, #5fe0775e);
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
 }
 
-@keyframes slideIn {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes rotateIn {
-  0% {
-    transform: rotate(-10deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
+.lp-main-text h1, .lp-main-text h2 {
+  margin: 0;
+  padding: 20px 20px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .lp-main-text h1 {
-  color: black;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  font-size: 30px;
-  font-weight: 700;
-  animation: fadeIn 2s ease-in-out, slideIn 2s ease-in-out;
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 .lp-main-text h1:hover {
-  color: #5fe077;
-  transform: scale(1.1);
+  color: var(--primary-color);
+  transform: scale(1.05);
 }
 
 .lp-main-text h2 {
-  color: black;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 400;
-  justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  animation: fadeIn 2s ease-in-out, rotateIn 2s ease-in-out;
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .lp-main-text h2:hover {
-  color: #5fe077;
+  color: var(--secondary-color);
   transform: scale(1.05) rotate(2deg);
 }
+
+.lp-main-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+  .lp-main-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .lp-main-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .lp-main-text p {
+    font-size: 1rem;
+  }
+
+  .authority-item {
+    font-size: 1rem;
+  }
+}
+
+

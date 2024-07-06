@@ -1,69 +1,76 @@
 .lp-clients {
-    padding: 50px 0;
-    background-color: #f5f5f5;
-  }
-  
-  .lp-clients h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.lp-clients h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.lp-clients-grid {
+  display: flex;
+  flex-wrap: nowrap; /* Impede que os itens quebrem linha */
+  gap: 20px;
+  justify-content: flex-start;
+  overflow-x: auto; /* Permite o scroll horizontal */
+  padding: 20px 0; /* Espaçamento para o scroll */
+}
+
+.lp-client-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  min-width: 80%; /* Largura mínima dos cards na versão mobile */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.lp-client-card:hover {
+  transform: translateY(-10px);
+}
+
+.lp-client-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.lp-client-card p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.lp-client-card blockquote {
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
   .lp-clients-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    flex-wrap: wrap; /* Permite quebra de linha para telas maiores */
+    overflow-x: hidden; /* Remove o scroll horizontal em telas maiores */
   }
-  
+
   .lp-client-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    width: 300px; /* Aumentei o tamanho dos cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    min-width: auto;
+    width: 350px;
+    padding: 30px;
   }
-  
-  .lp-client-card:hover {
-    transform: translateY(-10px);
+}
+
+@media (min-width: 1024px) {
+  .lp-client-card {
+    width: 400px;
+    padding: 40px;
   }
-  
-  .lp-client-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-  
-  .lp-client-card p {
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 10px; /* Adicionei margem inferior */
-  }
-  
-  .lp-client-card blockquote {
-    color: #666;
-    font-style: italic;
-    font-size: 14px;
-    margin: 10px 0 0; /* Ajustei a margem para o bloco de citação */
-  }
-  
-  /* Media Queries */
-  @media (min-width: 768px) {
-    .lp-client-card {
-      width: 350px; /* Aumentei ainda mais o tamanho dos cards em telas maiores */
-      padding: 30px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .lp-client-card {
-      width: 400px; /* Aumentei ainda mais o tamanho dos cards em telas maiores */
-      padding: 40px;
-    }
-  }
-  
+}

@@ -1,16 +1,16 @@
+
 import './styles.css';
 
-export default function CardText() {
+const CardText = () => {
+  return (
+    <section className="lp-main-text fadeInUp">
+     <div className='lp-container'>
+     <h1>Transforme Seu Negócio</h1>
+      <h2>Com Experts em Tráfego Pago</h2>
+      <p>15 anos ajudando empresas de comércio eletrônico a crescer por meio de estratégias baseadas em dados.</p>
+     </div>
+    </section>
+  );
+};
 
-    return (
-
-
-        <div className='lp-main-text lp-container'>
-            <h1>Cresça seu faturamento com experts em tráfego pago</h1>
-            <h2>Paixão por fazer empresas crescerem através de experiência e foco nos resultados</h2>
-        </div>
-
-
-    );
-
-}
+export default CardText;
