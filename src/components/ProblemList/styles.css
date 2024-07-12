@@ -1,9 +1,10 @@
 .problems-section {
-  padding: 20px 20px;
+  padding: 30px 20px;
   text-align: center;
   background-color: #f9f9f9;
   border-radius: 8px;
-  margin: 20px 0;
+
+
 }
 
 .problems-section h2 {
@@ -21,6 +22,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 40px;
 }
 
 .problem-item {
@@ -28,10 +30,14 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #555;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .problem-item:hover {
@@ -39,9 +45,27 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.problem-icon {
+  font-size: 1.5rem;
+  color: #5fe077;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
 @media (min-width: 576px) {
   .problems-section {
-    padding: 40px ;
+    padding: 40px;
   }
 
   .problems-section h2 {
@@ -58,6 +82,7 @@
   .problem-item {
     flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
+    font-size: 1rem;
   }
 }
 
@@ -66,4 +91,5 @@
     flex: 1 1 calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);
   }
+
 }

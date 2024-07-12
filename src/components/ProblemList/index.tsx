@@ -1,13 +1,15 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faChartLine, faShoppingCart, faBullhorn, faCommentDots, faCogs } from '@fortawesome/free-solid-svg-icons';
 import './styles.css';
 
 export default function ProblemsList() {
   const problems = [
-    "Baixa visibilidade online",
-    "Dificuldade em gerar vendas",
-    "Insatisfeito com a plataforma de ecommerce",
-    "Campanhas de marketing ineficazes",
-    "Não tenho feedbacks sobre a conta",
-    "Gestão de anúncios complicada"
+    { text: "Baixa visibilidade online", icon: faEye, highlight: "visibilidade online" },
+    { text: "Dificuldade em gerar vendas", icon: faChartLine, highlight: "gerar vendas" },
+    { text: "Migração ", icon: faShoppingCart, highlight: "plataforma de ecommerce" },
+    { text: "Campanhas de marketing ineficazes", icon: faBullhorn, highlight: "marketing ineficazes" },
+    { text: "Não tenho feedbacks sobre a conta", icon: faCommentDots, highlight: "feedbacks sobre a conta" },
+    { text: "Gestão de anúncios complicada", icon: faCogs, highlight: "Gestão de anúncios" }
   ];
 
   return (
@@ -16,7 +18,12 @@ export default function ProblemsList() {
       <ul className="problems-list">
         {problems.map((problem, index) => (
           <li key={index} className="problem-item">
-            {problem}
+            <FontAwesomeIcon icon={problem.icon} className="problem-icon" />
+            <span>
+              {problem.text.split(problem.highlight)[0]}
+              <strong>{problem.highlight}</strong>
+              {problem.text.split(problem.highlight)[1]}
+            </span>
           </li>
         ))}
       </ul>

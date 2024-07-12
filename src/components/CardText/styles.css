@@ -4,14 +4,13 @@
   padding: 25px 20px;
   background: linear-gradient(135deg, #5f7fe00f, #5fe0775e);
   color: black;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 
 }
 
 .lp-main-text h1, .lp-main-text h2 {
   margin: 0;
   padding: 20px 20px;
+  font-size: 30px;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -75,15 +74,15 @@
 
 @media (max-width: 768px) {
   .lp-main-text h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .lp-main-text h2 {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
   }
 
   .lp-main-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .authority-item {

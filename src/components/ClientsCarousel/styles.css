@@ -11,12 +11,13 @@
 .carousel {
     display: flex;
     gap: 20px;
-    animation: scroll 5s linear infinite;
     align-items: center;
+    animation: scroll 20s linear infinite; /* Increase duration for smoother scroll */
 }
 
 .carousel-item {
-    max-width: 100px; /* Ajuste conforme necessário */
+    min-width: 100px; /* Ensure each item has a consistent width */
+
     flex-shrink: 0;
 }
 
@@ -31,6 +32,6 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }

@@ -19,8 +19,8 @@ export default function AboutUs() {
                     <div className='lp-partner-card'>
                         <img src={partner2Image} alt='Sócio 2' />
                         <h3>Sócio 2</h3>
-                        <p>Descrição breve sobre Sócio 2. Experiência, habilidades e contribuições para a empresa.</p>
-                        <a href='https://www.linkedin.com/in/socio2' target='_blank' rel='noopener noreferrer'>
+                       <p>Empreendedor, programador e especialista em tráfego pago com mais de 5 anos de experiência. Sólido conhecimento do ambiente tecnológico e de negócios.</p>
+                        <a href='https://www.linkedin.com/in/gaspartartari' target='_blank' rel='noopener noreferrer'>
                             LinkedIn
                         </a>
                     </div>

@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+ 
 }
 
 .lp-header img {
@@ -17,6 +18,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  z-index: 1;
 }
 
 .lp-header-nav-links {

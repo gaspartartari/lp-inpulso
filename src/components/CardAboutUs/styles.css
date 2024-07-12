@@ -28,6 +28,7 @@
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    
   }
   
   .lp-partner-card:hover {
@@ -42,6 +43,11 @@
     object-fit: cover;
     border: 2px solid #5fe077;
     margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+ 
   }
   
   .lp-partner-card h3 {

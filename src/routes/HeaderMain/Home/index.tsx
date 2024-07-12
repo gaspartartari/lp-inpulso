@@ -17,19 +17,41 @@ import './styles.css';
 export default function Home() {
   return (
     <main className='lp-container'>
-      <CardText />
+      <section id="home">
+        <CardText />
+      </section>
       <ScheduleButton />
-      <ServicesSection />
-      <InvestmentCounter />
-      <ClientsCarousel />
-      <ProblemsList />
-      <ScheduleMeeting />
-      <AboutUs />
+      <section id="services">
+        <ServicesSection />
+      </section>
+      <section id="investment">
+        <InvestmentCounter />
+      </section>
+      <section id="clients-carousel">
+        <ClientsCarousel />
+      </section>
+      <section id="problems">
+        <ProblemsList />
+      </section>
+      <section id="schedule">
+        <ScheduleMeeting />
+      </section>
+      <section id="about-us">
+        <AboutUs />
+      </section>
       <WhatsAppButton number={'51993415860'} text={'Chame no WhatsApp'} message={'Olá, gostaria de agendar uma consulta'} />
-      <ClientsSection />
-      <FAQs />
-      <About />
-      <Testimonials />
+      <section id="clients">
+        <ClientsSection />
+      </section>
+      <section id="faqs">
+        <FAQs />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
       <Footer />
     </main>
   );

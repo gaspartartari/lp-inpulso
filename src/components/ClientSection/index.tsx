@@ -34,7 +34,7 @@ export default function ClientsSection() {
                         <img src={client1Image} alt='Cliente 1' />
                         <p>Singa</p>
                         <blockquote>
-                            "A empresa tem sido fundamental para o crescimento do nosso negócio. Excelente serviço!"
+                            "Crescimento de 450% YoY gerindo CRM e Mídia Paga"
                         </blockquote>
                     </div>
                     <div data-aos="fade-up" className='lp-client-card'>

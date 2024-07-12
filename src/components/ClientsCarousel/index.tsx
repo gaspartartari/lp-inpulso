@@ -6,8 +6,9 @@ import client3 from '../../assets/logos-clientes/3.jpg';
 import client4 from '../../assets/logos-clientes/4.jpg';
 import client5 from '../../assets/logos-clientes/5.jpg';
 import client6 from '../../assets/logos-clientes/6.jpg';
+import client7 from '../../assets/logos-clientes/7.jpg';
 
-const clients = [client1, client2, client3, client4, client5, client6];
+const clients = [client1, client2, client3, client4, client5, client6, client7];
 
 export default function ClientsCarousel() {
     const carouselRef = useRef<HTMLDivElement>(null);
@@ -18,7 +19,7 @@ export default function ClientsCarousel() {
 
         const autoScroll = () => {
             if (carousel) {
-                if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+                if (scrollAmount >= carousel.scrollWidth / 2) {
                     scrollAmount = 0;
                 } else {
                     scrollAmount += 1;
@@ -32,17 +33,16 @@ export default function ClientsCarousel() {
     }, []);
 
     return (
-        <div className="carousel-container">
-            <div className="carousel" ref={carouselRef}>
+        <div className="carousel-container w-full bg-white py-5 overflow-hidden relative flex justify-center items-center">
+            <div className="carousel flex" ref={carouselRef}>
                 {clients.map((client, index) => (
-                    <div key={index} className="carousel-item">
-                        <img src={client} alt={`Client ${index + 1}`} />
+                    <div key={index} className="carousel-item flex justify-center items-center h-24">
+                        <img src={client} alt={`Client ${index + 1}`} className="h-full object-contain" />
                     </div>
                 ))}
-                {/* Duplicar os itens para rolagem contínua */}
                 {clients.map((client, index) => (
-                    <div key={index + clients.length} className="carousel-item">
-                        <img src={client} alt={`Client ${index + clients.length + 1}`} />
+                    <div key={index + clients.length} className="carousel-item flex justify-center items-center h-24">
+                        <img src={client} alt={`Client ${index + clients.length + 1}`} className="h-full object-contain" />
                     </div>
                 ))}
             </div>

@@ -19,12 +19,12 @@ export default function Header() {
                 <div className={`lp-header-nav-links ${isOpen ? 'open' : ''}`}>
                     <a href="#home" onClick={() => setIsOpen(false)}>Início</a>
                     <a href="#services" onClick={() => setIsOpen(false)}>Serviços</a>
-                    <a href="#investment" onClick={() => setIsOpen(false)}>Investimentos</a>
                     <a href="#about-us" onClick={() => setIsOpen(false)}>Sobre Nós</a>
-                    <a href="#clients" onClick={() => setIsOpen(false)}>Clientes</a>
+                    <a href="#clients" onClick={() => setIsOpen(false)}>Cases</a>
                     <a href="#faqs" onClick={() => setIsOpen(false)}>FAQs</a>
-                    <a href="#about" onClick={() => setIsOpen(false)}>About</a>
                     <a href="#testimonials" onClick={() => setIsOpen(false)}>Depoimentos</a>
+                    <a href="#contact" onClick={() => setIsOpen(false)}>Contato</a>
+
                 </div>
                 <div className='lp-menu-icon' onClick={toggleMenu}>
                     {isOpen ? <FaTimes /> : <FaBars />}

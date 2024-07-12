@@ -59,6 +59,7 @@
   .lp-clients-grid {
     flex-wrap: wrap; /* Permite quebra de linha para telas maiores */
     overflow-x: hidden; /* Remove o scroll horizontal em telas maiores */
+    justify-content: center;
   }
 
   .lp-client-card {

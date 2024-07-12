@@ -38,7 +38,7 @@ export default function InvestmentCounter() {
                     {startCount && (
                         <CountUp
                             start={0}
-                            end={1364000}
+                            end={3364000}
                             duration={7}
                             separator="."
                             decimals={2}
