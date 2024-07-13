@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Slider from 'react-slick';
 import './styles.css';
 import client1 from '../../assets/logos-clientes/1.jpg';
