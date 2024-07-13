@@ -10,9 +10,13 @@ interface WhatsAppButtonProps {
 const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ number, text, message }) => {
     const link = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
     return (
-        <a href={link} target='_blank' rel='noopener noreferrer' className='lp-whatsapp-button'>
-            {text}
-        </a>
+        <div className='lp-whatsapp-button-container'>
+            <a href={link} target='_blank' rel='noopener noreferrer' className='lp-whatsapp-button lp-container'>
+                {text}
+            </a>
+
+
+        </div>
     );
 };
 

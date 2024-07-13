@@ -1,37 +1,19 @@
+/* styles.css */
 .carousel-container {
     width: 100%;
     overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: white;
-}
-
-.carousel {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    animation: scroll 20s linear infinite; /* Increase duration for smoother scroll */
+    padding: 20px 0;
 }
 
 .carousel-item {
-    min-width: 100px; /* Ensure each item has a consistent width */
-
-    flex-shrink: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-item img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
 }

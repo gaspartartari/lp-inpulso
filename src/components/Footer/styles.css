@@ -1,13 +1,13 @@
 footer {
-    background-color: black;
-    color: white;
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
     display: flex;
     height: 60px;
     align-items: center;
 }
 
 .lp-footer {
-    background-color: black;
+    background-color: var(--bg-primary-color);
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;

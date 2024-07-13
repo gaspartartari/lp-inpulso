@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 import HeaderMain from './routes/HeaderMain'
 import Home from './routes/HeaderMain/Home'
+import './index.css'
 
 function App() {
 

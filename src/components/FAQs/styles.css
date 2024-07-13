@@ -1,14 +1,14 @@
 .lp-faqs {
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: var(--bg-secondary-color);
     text-align: center;
-    color: #333;
+    color: var(--text-secondary-colo);
 
 
   }
   
   .lp-faqs h2 {
-    color: #333;
+    color: var(--text-secondary-colo);
     margin-bottom: 30px;
     font-size: 28px;
     font-weight: 700;
@@ -25,7 +25,7 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #5fe077;
+    color: var( --bg-primary-color);
     padding: 0 20px;
   }
   

@@ -11,8 +11,8 @@ export default function AboutUs() {
                     <div className='lp-partner-card'>
                         <img src={partner1Image} alt='Sócio 1' />
                         <h3>Sócio 1</h3>
-                        <p>Descrição breve sobre Sócio 1. Experiência, habilidades e contribuições para a empresa.</p>
-                        <a href='https://www.linkedin.com/in/socio1' target='_blank' rel='noopener noreferrer'>
+                        <p>Profissional com mais de 10 anos de experiência em marketing digital. Tem uma abordagem omnichannel para criar pontos de contato estratégicos com os clientes.</p>
+                        <a href='https://www.linkedin.com/in/murilo-galante-silva-04240229' target='_blank' rel='noopener noreferrer'>
                             LinkedIn
                         </a>
                     </div>

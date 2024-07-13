@@ -2,15 +2,14 @@
 .lp-main-text {
   text-align: center;
   padding: 25px 20px;
-  background: linear-gradient(135deg, #5f7fe00f, #5fe0775e);
-  color: black;
+  background-color: var(--bg-primary-color);
+  color: var( --text-primary-color);
 
 }
 
 .lp-main-text h1, .lp-main-text h2 {
   margin: 0;
   padding: 20px 20px;
-  font-size: 30px;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -41,40 +40,11 @@
   line-height: 1.6;
   padding: 0 20px;
 }
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.fadeInUp {
-  animation: fadeInUp 1s ease-in-out forwards;
-}
-
-.fadeInLeft {
-  animation: fadeInLeft 1s ease-in-out forwards;
-}
+≈
 
 @media (max-width: 768px) {
   .lp-main-text h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .lp-main-text h2 {
@@ -82,12 +52,10 @@
   }
 
   .lp-main-text p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
-  .authority-item {
-    font-size: 1rem;
-  }
+
 }
 
 

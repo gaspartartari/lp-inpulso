@@ -1,0 +1,14 @@
+.video-player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+    background-color: #000; /* Optional: add a background color */
+    border-radius: 8px; /* Optional: add rounded corners */
+    overflow: hidden; /* Ensures the video fits within the rounded corners */
+}
+
+.video-player {
+    width: 100%;
+    height: auto;
+}

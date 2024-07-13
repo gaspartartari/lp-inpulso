@@ -2,11 +2,10 @@
   padding: 50px 20px;
   background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
   text-align: center;
-  color: black;
+  color: var( --text-secondary-color);
 }
 
 .lp-services h2 {
-  color: #333;
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: 700;
@@ -22,7 +21,7 @@
 }
 
 .lp-service-card {
-  background: white;
+  background: var(--bg-tertiary-color);
   border: 2px solid transparent;
   border-radius: 12px;
   padding: 20px;
@@ -57,13 +56,13 @@
 
 .lp-service-card:hover {
   transform: translateY(-10px);
-  border: 2px solid #5fe077;
+  border: 2px solid var(--bg-primary-color);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .lp-service-card p {
   margin-top: 15px;
-  color: #333;
+  color: var( --text-secondary-color);
   font-size: 18px;
   font-weight: 500;
 }
@@ -76,7 +75,7 @@
 }
 
 .lp-icons .fa-icon {
-  color: #5fe077 !important;
+  color: var( --bg-primary-color) !important;
   font-size: 24px;
 }
 

@@ -4,6 +4,9 @@ import client1Image from '../../assets/cliente1.jpg';
 import client2Image from '../../assets/cliente2.jpg';
 import client3Image from '../../assets/cliente3.jpg';
 import client4Image from '../../assets/cliente4.jpg';
+import client5Image from '../../assets/cliente5.png';
+import client6Image from '../../assets/cliente6.jpg';
+import client7Image from '../../assets/cliente7.jpg';
 
 
 
@@ -28,7 +31,7 @@ export default function ClientsSection() {
     return (
         <section className='lp-clients'>
             <div className='lp-container'>
-                <h2>Nossos Clientes</h2>
+                <h2>Veja alguns de nossos cases</h2>
                 <div className='lp-clients-grid'>
                     <div className='lp-client-card'>
                         <img src={client1Image} alt='Cliente 1' />
@@ -41,7 +44,7 @@ export default function ClientsSection() {
                         <img src={client2Image} alt='Cliente 2' />
                         <p>Soleah</p>
                         <blockquote>
-                            "Profissionais dedicados e resultados incríveis. Recomendo a todos!"
+                            "Correção de bugs no trackeamento e melhoria de performance"
                         </blockquote>
                     </div>
                     <div className='lp-client-card'>
@@ -55,7 +58,28 @@ export default function ClientsSection() {
                         <img src={client4Image} alt='Cliente 4' />
                         <p>Marilia Chiele Jóias</p>
                         <blockquote>
-                            "Estamos extremamente satisfeitos com os serviços prestados. Parceria de sucesso!"
+                            "Lançamento das primerias campanhas de mídia paga no Google Ads, duplicando faturamento em 3 meses"
+                        </blockquote>
+                    </div>
+                    <div className='lp-client-card'>
+                        <img src={client5Image} alt='Cliente 5' />
+                        <p>Manfrim Store</p>
+                        <blockquote>
+                            "100K faturados no primeiro mês de Google Ads com ROAS de 1000%. Correção de bugs no traqueamento.  "
+                        </blockquote>
+                    </div>
+                    <div className='lp-client-card'>
+                        <img src={client6Image} alt='Cliente 6' />
+                        <p>Adapa Bio</p>
+                        <blockquote>
+                            "Ciração do site na plataforma Shopify e implementação de estrutura de acompanhamento de conversão"
+                        </blockquote>
+                    </div>
+                    <div className='lp-client-card'>
+                        <img src={client7Image} alt='Cliente 7' />
+                        <p>MissLi</p>
+                        <blockquote>
+                            "Mentoria sobre anúncios online e saúde digital da empresa, correção de bugs no traqueamento e melhoria de performance"
                         </blockquote>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ export default function ProblemsList() {
     { text: "Migração ", icon: faShoppingCart, highlight: "plataforma de ecommerce" },
     { text: "Campanhas de marketing ineficazes", icon: faBullhorn, highlight: "marketing ineficazes" },
     { text: "Não tenho feedbacks sobre a conta", icon: faCommentDots, highlight: "feedbacks sobre a conta" },
-    { text: "Gestão de anúncios complicada", icon: faCogs, highlight: "Gestão de anúncios" }
+    { text: "Pixel de  ", icon: faCogs, highlight: "rastreamento bugado" }
   ];
 
   return (

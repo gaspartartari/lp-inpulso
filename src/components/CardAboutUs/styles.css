@@ -1,12 +1,12 @@
 .lp-about-us {
     padding: 50px 0;
-    background-color: #ffffff;
+    background-color: var(--bg-secondary-color);
     text-align: center;
-    color: #333;
+    color: var(--text-secondary-color);
   }
   
   .lp-about-us h2 {
-    color: #333;
+    color: var(--text-secondary-color);
     margin-bottom: 30px;
     font-size: 28px;
     font-weight: 700;
@@ -20,8 +20,8 @@
   }
   
   .lp-partner-card {
-    background: white;
-    border: 1px solid #ddd;
+    background: var(--bg-tertiary-color);
+    border: 1px solid var(--border-primary-color);
     border-radius: 8px;
     padding: 20px;
     text-align: center;
@@ -41,7 +41,7 @@
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border: 2px solid #5fe077;
+    border: 2px solid var(--bg-primary-color);
     margin-bottom: 10px;
     display: block;
     margin-left: auto;
@@ -54,7 +54,7 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #5fe077;
+    color:  var(--bg-primary-color);
   }
   
   .lp-partner-card p {

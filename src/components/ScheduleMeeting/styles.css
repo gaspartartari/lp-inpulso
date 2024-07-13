@@ -1,9 +1,19 @@
+
 .lp-schedule-meeting {
     padding: 50px 20px;
-    background: linear-gradient(135deg, #5fe077 0%, #2bb673 100%);
+    background: linear-gradient(135deg, var(--text-primary-color) -500%, var(--bg-primary-color) 100%);
     text-align: center;
-    color: white;
+    color: var(--text-primary-color);
     transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .lp-schedule-button-container{
+    margin: 0 20px;
+  }
+
+  .lp-schedule-meeting a {
+    background: var(--btn-primary-color);
+  
   }
   
   .lp-schedule-meeting:hover {
@@ -17,7 +27,7 @@
   }
   
   .lp-schedule-meeting h2 {
-    color: white;
+    color: var(--text-primary-color);
     margin-bottom: 20px;
     font-size: 28px;
     font-weight: 700;
@@ -33,28 +43,7 @@
     padding: 0 20px;
   }
   
-  .lp-schedule-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: white;
-    color: #5fe077;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  }
-  
-  .lp-schedule-button:hover {
-    background-color: #2bb673;
-    color: white;
-    transform: scale(1.05);
-  }
-  
-  .lp-schedule-button:active {
-    transform: scale(0.95);
-  }
+ 
   @media (min-width: 768px) {
     .lp-schedule-meeting h2 {
       font-size: 32px;
@@ -63,10 +52,11 @@
     .lp-schedule-meeting p {
       font-size: 20px;
     }
-  
-    .lp-schedule-button {
-      font-size: 20px;
+
+    .lp-schedule-button-container{
+      margin: 0 300px;
     }
+
   }
   
   @media (min-width: 1024px) {
@@ -77,9 +67,10 @@
     .lp-schedule-meeting p {
       font-size: 22px;
     }
-  
-    .lp-schedule-button {
-      font-size: 22px;
+
+    .lp-schedule-button-container{
+      margin: 0 300px;
     }
+  
   }
   

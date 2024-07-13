@@ -1,15 +1,17 @@
 .lp-testimonials {
     padding: 50px 0;
-    background-color: #f5f5f5;
+    background-color: var(--bg-primary-color);
     text-align: center;
-    color: #333;
+    color: var(--text-secondary-color);
+    margin-top: 40px
   }
   
   .lp-testimonials h2 {
-    color: #333;
+    color: var(--text-primary-color);
     margin-bottom: 30px;
     font-size: 28px;
     font-weight: 700;
+    padding: 0 20px;
   }
   
   .lp-testimonials-grid {
@@ -20,8 +22,8 @@
   }
   
   .lp-testimonial {
-    background: white;
-    border: 1px solid #ddd;
+    background: var(--bg-tertiary-color);
+    border: 1px solid var( --border-primary-color);
     border-radius: 8px;
     padding: 20px;
     text-align: center;
@@ -44,7 +46,7 @@
   .lp-testimonial h3 {
     font-size: 18px;
     font-weight: 600;
-    color: #5fe077;
+    color: var(--btn-primary-color);
   }
   
   @media (min-width: 768px) {

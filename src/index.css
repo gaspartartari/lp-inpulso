@@ -1,18 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@tailwind base;
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @tailwind components;
 @tailwind utilities;
 
 
 
+
 :root {
+  --bg-primary-color: #5B75BF;
+  --bg-secondary-color: #f9f9f9;
+  --bg-tertiary-color: #ffffff;
+  --bg-quartiaty-color: #f5f5f5;
+
+  --text-primary-color: #ffffff;
+  --text-secondary-color: #333;
+
+  --btn-primary-color: #F2733C;
+
+  --border-primary-color:#ddd;
+  --border-form-input-color: #ccc;
+  
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins";
+  font-family: "Nunito Sans", sans-serif;
 }
 
 a,
@@ -35,6 +49,7 @@ body {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  
 }
 
 .lp-mb20 {
@@ -46,10 +61,9 @@ body {
 }
 
 
-@media (min-width: 576px) {
-  .lp-container {
-    padding: 0 20px;
-  }
+@media (min-width: 960px) {
+
+  
 }
 
 /* Animações */
@@ -90,5 +104,49 @@ html {
 .lp-header-nav-links a {
   cursor: pointer;
 }
+
+
+/* Buttons */
+.lp-schedule-button{
+  display: flex;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 20px 40px;
+  color: var(--text-primary-color);
+
+
+}
+
+.lp-schedule-button:hover {
+  background-color: var(--btn-primary-color);
+  transform: scale(1.05);
+  color: var(--text-primary-color);
+}
+
+.lp-schedule-button:active {
+  transform: scale(0.95);
+}
+
+@media (min-width: 768px) {
+
+  .lp-schedule-button {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lp-schedule-button {
+    font-size: 22px;
+  }
+}
+
 
 

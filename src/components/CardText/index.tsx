@@ -7,7 +7,7 @@ const CardText = () => {
      <div className='lp-container'>
      <h1>Transforme Seu Negócio</h1>
       <h2>Com Experts em Tráfego Pago</h2>
-      <p>15 anos ajudando empresas de comércio eletrônico a crescer por meio de estratégias baseadas em dados.</p>
+      <p><strong>15 anos </strong>ajudando empresas de <strong>comércio eletrônico</strong> a crescer por meio de estratégias <strong> baseadas em dados</strong>.</p>
      </div>
     </section>
   );

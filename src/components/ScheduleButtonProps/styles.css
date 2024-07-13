@@ -1,5 +1,5 @@
-.lp-schedule-button-black-bg{
-    background-color: #000000;
+.lp-schedule-button-container-bg{
+    background-color: var(--bg-primary-color);
     height: 150px;
     justify-content: center;
     align-items: center;
@@ -7,35 +7,12 @@
     margin: 0;
 }
 
-.lp-schedule-button-black-bg a {
-    background-color :#5fe077 ;
+
+.lp-schedule-button-container-bg a {
+    background-color : var(--btn-primary-color) ;
     color: white;
 }
 
 
-.lp-schedule-button{
-    display: flex;
-    padding: 10px 20px;
-    background-color: white;
-    color: #5fe077;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 8px;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s, transform 0.3s;
-    margin: 20px 40px;
 
-  }
-  
-  .lp-schedule-button:hover {
-    background-color: #2bb673;
-    transform: scale(1.05);
-  }
-  
-  .lp-schedule-button:active {
-    transform: scale(0.95);
-  }
 
