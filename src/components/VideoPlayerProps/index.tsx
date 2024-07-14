@@ -31,6 +31,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 loop={loop}
                 muted={muted}
                 className='video-player'
+                playsInline
             >
                 Your browser does not support the video tag.
             </video>
