@@ -11,6 +11,7 @@
 .lp-schedule-button-container-bg a {
     background-color : var(--btn-primary-color) ;
     color: white;
+    height: 60px;
 }
 
 
