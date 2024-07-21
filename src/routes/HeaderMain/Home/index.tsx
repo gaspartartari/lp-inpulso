@@ -4,10 +4,8 @@ import CardText from '../../../components/CardText';
 import ClientsCarousel from '../../../components/ClientsCarousel';
 import ClientsSection from '../../../components/ClientSection';
 import FAQs from '../../../components/FAQs';
-import Footer from '../../../components/Footer';
 import InvestmentCounter from '../../../components/InvestMentCounter';
 import ProblemsList from '../../../components/ProblemList';
-import ROASCalculator from '../../../components/ROASCalculator';
 import ScheduleButton from '../../../components/ScheduleButtonProps';
 import ScheduleMeeting from '../../../components/ScheduleMeeting';
 import ServicesSection from '../../../components/ServiceSection';
@@ -55,12 +53,8 @@ export default function Home() {
       <section id="faqs">
         <FAQs />
       </section>
-      <section id="roas">
-        <ROASCalculator />
-      </section>
 
-
-      <Footer />
+ 
     </main>
   );
 }

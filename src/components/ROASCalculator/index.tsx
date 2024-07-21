@@ -11,14 +11,24 @@ const ROASCalculator: React.FC = () => {
         e.preventDefault();
         const revenueNum = parseFloat(revenue);
         const fixedCostsNum = parseFloat(fixedCosts);
-        const variableCostsNum = parseFloat(variableCosts);
+        const variableCostsPercentage = parseFloat(variableCosts);
 
-        if (isNaN(revenueNum) || isNaN(fixedCostsNum) || isNaN(variableCostsNum)) {
+        if (isNaN(revenueNum) || isNaN(fixedCostsNum) || isNaN(variableCostsPercentage)) {
             alert("Por favor, insira números válidos.");
             return;
         }
 
-        const result = revenueNum / (revenueNum - fixedCostsNum - variableCostsNum);
+        const variableCostsNum = (variableCostsPercentage / 100) * revenueNum;
+        const totalCost = fixedCostsNum + variableCostsNum;
+        const profitMargin = (revenueNum - totalCost) / revenueNum;
+
+        if (profitMargin <= 0) {
+            alert("A receita gerada é inferior aos custos totas, portanto a margem de lucro é negativa, independente da situação.");
+            return;
+        }
+
+        const result = 1 / profitMargin;
+
         setRoas(parseFloat(result.toFixed(2)));
     };
 
@@ -28,19 +38,20 @@ const ROASCalculator: React.FC = () => {
 
     return (
         <div className="lp-container">
-            <div className="roas-calculator ">
+            <div className="roas-calculator">
                 <h2>Calculadora de ROAS</h2>
                 <p>
-                    <span>ROAS (Return on Ad Spend) mede a eficácia das campanhas de marketing digital.
-                        Mostra a receita gerada por cada unidade monetária gasta em anúncios.</span> <br />
-                    <span>Nosso cálculo de <strong>ROAS de equilíbrio</strong> indica qual o mínimo de retorno necessário para sair no empate.</span><br />
-                    <span><strong>Qualquer valor acima</strong> do ROAS de equilíbrio é lucro, e <strong>qualquer valor abaixo</strong> é prejuízo.</span>
+                    <span><strong>Como Utilizar a Calculadora:</strong></span>
+                    <span><strong>Receita:</strong> Insira o valor total da receita gerada ou projetada pelas suas vendas.</span>
+                    <span><strong>Custos Fixos:</strong> Insira o total dos seus custos fixos.</span>
+                    <span><strong>Custos Variáveis (%):</strong> Insira o percentual % médio dos seus custos variáveis.</span>
                 </p>
                 <form onSubmit={calculateROAS}>
                     <div className="form-group">
                         <label>Receita:</label>
                         <input
                             type="number"
+                            placeholder="Ex: 100000"
                             value={revenue}
                             onChange={handleInputChange(setRevenue)}
                             required
@@ -50,15 +61,17 @@ const ROASCalculator: React.FC = () => {
                         <label>Custos Fixos:</label>
                         <input
                             type="number"
+                            placeholder="Ex: 30000"
                             value={fixedCosts}
                             onChange={handleInputChange(setFixedCosts)}
                             required
                         />
                     </div>
                     <div className="form-group">
-                        <label>Custos Variáveis:</label>
+                        <label>Custos Variáveis (%):</label>
                         <input
                             type="number"
+                            placeholder="Ex: 40"
                             value={variableCosts}
                             onChange={handleInputChange(setVariableCosts)}
                             required

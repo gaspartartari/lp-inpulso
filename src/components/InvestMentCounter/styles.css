@@ -18,7 +18,7 @@
     font-size: 26px;
     font-weight: bold;
     color: var(--btn-primary-color);
-    background: linear-gradient(45deg, var( --bg-primary-color) -40%, var(--text-primary-color));
+    background: var( --bg-secondary-color);
     padding: 10px 20px;
     border-radius: 8px;
     display: inline-block;

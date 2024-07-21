@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './styles.css';
 import { faFacebook, faGoogle, faLinkedin, faPinterest, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { faHandshake, faShoppingCart, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake, faShoppingCart, faLaptopCode, faWandMagicSparkles, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 export default function ServicesSection() {
     useEffect(() => {
@@ -59,7 +59,19 @@ export default function ServicesSection() {
                         <div className="lp-icons">
                             <FontAwesomeIcon icon={faLaptopCode} size="2x" className="fa-icon" />
                         </div>
-                        <p>Construção de Landing Pages (iguais a esta!)</p>
+                        <p>Criação de Outros Sites e Páginas de Vendas</p>
+                    </div>
+                    <div className='lp-service-card'>
+                        <div className="lp-icons">
+                        <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" className="fa-icon" />
+                        </div>
+                        <p>Otimização Para Mercanismos de Busca (SEO)</p>
+                    </div>
+                    <div className='lp-service-card'>
+                        <div className="lp-icons">
+                            <FontAwesomeIcon icon={faWandMagicSparkles} size="2x" className="fa-icon" />
+                        </div>
+                        <p>Criação e Renovação de Idenidade Visual</p>
                     </div>
                 </div>
             </div>

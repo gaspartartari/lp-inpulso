@@ -19,6 +19,8 @@
 
   --border-primary-color:#ddd;
   --border-form-input-color: #ccc;
+
+  --html-body-background: linear-gradient(135deg, #ffffff, #f0f4f8);
   
 }
 
@@ -38,7 +40,7 @@ a:hover {
 
 html,
 body {
-  background: linear-gradient(135deg, #ffffff, #f0f4f8);
+  background: var(  --html-body-background);
 }
 
 
