@@ -14,17 +14,15 @@ import VideoPlayer from '../../../components/VideoPlayerProps';
 import WhatsAppButton from '../../../components/WhatsAppButtonProps';
 import './styles.css';
 import videoMarketing from '../../../assets/videoMarketing.mp4';
-import TagManager from 'react-gtm-module'
- 
-const tagManagerArgs = {
-    dataLayer: {
-        page: 'home'
-    },
-    dataLayerName: 'PageDataLayer'
-}
+import { useEffect } from 'react';
+
 
 export default function Home() {
-  TagManager.dataLayer(tagManagerArgs)
+
+  useEffect (() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (window as any).dataLayer.push({ 'event': 'page_view' });
+  }, []);
 
   return (
     <main >
