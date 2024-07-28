@@ -17,6 +17,7 @@ import videoMarketing from '../../../assets/videoMarketing.mp4';
 
 
 export default function Home() {
+
   return (
     <main >
       <section id="home">
