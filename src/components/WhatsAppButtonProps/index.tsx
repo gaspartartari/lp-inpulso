@@ -18,7 +18,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ number, text, message }
             className='lp-whatsapp-button lp-container'
             onClick={() => {
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                (window as any).dataLayer.push({ 'event': 'schedule_button' });
+                (window as any).dataLayer.push({ 'event': 'whatsapp_button' });
             }}
             >
                 {text}
