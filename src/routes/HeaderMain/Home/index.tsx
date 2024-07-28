@@ -14,9 +14,17 @@ import VideoPlayer from '../../../components/VideoPlayerProps';
 import WhatsAppButton from '../../../components/WhatsAppButtonProps';
 import './styles.css';
 import videoMarketing from '../../../assets/videoMarketing.mp4';
-
+import TagManager from 'react-gtm-module'
+ 
+const tagManagerArgs = {
+    dataLayer: {
+        page: 'home'
+    },
+    dataLayerName: 'PageDataLayer'
+}
 
 export default function Home() {
+  TagManager.dataLayer(tagManagerArgs)
 
   return (
     <main >

@@ -14,8 +14,9 @@ export default function ScheduleButton() {
                 target='_blank'
                 rel='noopener noreferrer'
                 onClick={() => {
-                    (window as any).dataLayer.push({'event': 'schedule_button'});
-                  }}                className='lp-schedule-button'>
+                    (window as any).dataLayer.push({ 'event': 'schedule_button' });
+                }}
+                className='lp-schedule-button'>
                 Agendar Consulta
             </a>
 
