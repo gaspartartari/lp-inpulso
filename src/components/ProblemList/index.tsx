@@ -9,7 +9,7 @@ export default function ProblemsList() {
     { text: "Migração ", icon: faShoppingCart, highlight: "plataforma de ecommerce" },
     { text: "Campanhas de marketing ineficazes", icon: faBullhorn, highlight: "marketing ineficazes" },
     { text: "Não tenho feedbacks sobre a conta", icon: faCommentDots, highlight: "feedbacks sobre a conta" },
-    { text: "Pixel de  ", icon: faCogs, highlight: "rastreamento bugado" }
+    { text: "Pixel de  ", icon: faCogs, highlight: "rastreamento bugado" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function ProblemsList() {
             <FontAwesomeIcon icon={problem.icon} className="problem-icon" />
             <span>
               {problem.text.split(problem.highlight)[0]}
-              <strong>{problem.highlight}</strong>
+              <strong >{problem.highlight}</strong>
               {problem.text.split(problem.highlight)[1]}
             </span>
           </li>

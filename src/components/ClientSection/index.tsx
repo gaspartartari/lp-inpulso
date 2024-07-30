@@ -36,7 +36,7 @@ export default function ClientsSection() {
                 <div className='lp-clients-grid'>
                     <div className='lp-client-card'>
                         <a href='https://www.singapurastore.com.br' target='_blank' rel='noopener noreferrer'>
-                            <img src={client1Image} alt='Cliente 1' />
+                            <img src={client1Image} alt='Singapura Store' />
                             <p>Singa</p>
                             <blockquote>
                                 "Crescimento de 450% YoY gerindo CRM e Mídia Paga"
@@ -45,7 +45,7 @@ export default function ClientsSection() {
                     </div>
                     <div data-aos="fade-up" className='lp-client-card'>
                         <a href="https://www.soleah.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client2Image} alt='Cliente 2' />
+                            <img src={client2Image} alt='Soleah Bolsas' />
                             <p>Soleah</p>
                             <blockquote>
                                 "Correção de bugs no trackeamento e melhoria de performance"
@@ -54,7 +54,7 @@ export default function ClientsSection() {
                     </div>
                     <div className='lp-client-card'>
                         <a href="https://www.euliricas.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client3Image} alt='Cliente 3' />
+                            <img src={client3Image} alt='Eulíricas' />
                             <p>Eulíricas</p>
                             <blockquote>
                                 "Serviço impecável e resultados que superaram nossas expectativas."
@@ -63,7 +63,7 @@ export default function ClientsSection() {
                     </div>
                     <div className='lp-client-card'>
                         <a href="https://www.mariliachielejoias.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client4Image} alt='Cliente 4' />
+                            <img src={client4Image} alt='Marília Chiele Joias' />
                             <p>Marilia Chiele Jóias</p>
                             <blockquote>
                                 "Lançamento das primerias campanhas de mídia paga no Google Ads, duplicando faturamento em 3 meses"
@@ -72,16 +72,17 @@ export default function ClientsSection() {
                     </div>
                     <div className='lp-client-card'>
                         <a href="https://www.manfrimstore.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client5Image} alt='Cliente 5' />
+                            <img src={client5Image} alt='Manfrim Store' />
                             <p>Manfrim Store</p>
                             <blockquote>
-                                "100K faturados no primeiro mês de Google Ads com ROAS de 1000%. Correção de bugs no traqueamento.  "
+                                "100K faturados no primeiro mês de Google Ads com ROAS de 1000%. Correção de bugs no traqueamento.
+                                 Migracao de plataforma de E-commerce  "
                             </blockquote>
                         </a>
                     </div>
                     <div className='lp-client-card'>
                         <a href="https://adapabio.com/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client6Image} alt='Cliente 6' />
+                            <img src={client6Image} alt='Adapa Bio' />
                             <p>Adapa Bio</p>
                             <blockquote>
                                 "Ciração do site na plataforma Shopify e implementação de estrutura de acompanhamento de conversão"
@@ -90,8 +91,8 @@ export default function ClientsSection() {
                     </div>
                     <div className='lp-client-card'>
                         <a href="https://missli.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client7Image} alt='Cliente 7' />
-                            <p>MissLi</p>
+                            <img src={client7Image} alt='Miss Li' />
+                            <p>Miss Li</p>
                             <blockquote>
                                 "Mentoria sobre anúncios online e saúde digital da empresa, correção de bugs no traqueamento e melhoria de performance"
                             </blockquote>
@@ -99,10 +100,10 @@ export default function ClientsSection() {
                     </div>
                     <div className='lp-client-card'>
                         <a href="https://nodacozinha.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client8Image} alt='Cliente 8' />
+                            <img src={client8Image} alt='Noda' />
                             <p>Noda</p>
                             <blockquote>
-                                "Mentoria sobre anúncios online e saúde digital da empresa, correção de bugs no traqueamento e melhoria de performance"
+                                "Gestão de CRM e Mídia Paga, incluindo automação de e-mail marketing"
                             </blockquote>
                         </a>
                     </div>

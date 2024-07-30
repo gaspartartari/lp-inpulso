@@ -6,8 +6,8 @@ const CardText = () => {
     <section className="lp-main-text fadeInUp">
      <div className='lp-container'>
      <h1>Transforme Seu Negócio</h1>
-      <h2>Com Experts em Tráfego Pago</h2>
-      <p><strong>15 anos </strong>ajudando empresas de <strong>comércio eletrônico</strong> a crescer por meio de estratégias <strong> baseadas em dados</strong>.</p>
+      <h2>Com <strong>Experts</strong> em Marketing Digital </h2>
+      <p> 15 anos ajudando empresas do comércio eletrônico a crescer por meio de estratégias baseadas em dados.</p>
      </div>
     </section>
   );

@@ -19,6 +19,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
     autoPlay = true,
     loop = true,
     muted = true
+    
 }) => {
     return (
         <div className='video-player-container'>

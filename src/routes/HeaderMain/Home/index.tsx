@@ -1,4 +1,4 @@
-
+import './styles.css';
 import AboutUs from '../../../components/CardAboutUs';
 import CardText from '../../../components/CardText';
 import ClientsCarousel from '../../../components/ClientsCarousel';
@@ -12,7 +12,6 @@ import ServicesSection from '../../../components/ServiceSection';
 import Testimonials from '../../../components/Testimonials';
 import VideoPlayer from '../../../components/VideoPlayerProps';
 import WhatsAppButton from '../../../components/WhatsAppButtonProps';
-import './styles.css';
 import videoMarketing from '../../../assets/videoMarketing.mp4';
 import { useEffect } from 'react';
 

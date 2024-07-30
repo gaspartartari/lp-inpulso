@@ -26,7 +26,7 @@
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  width: 260px;
+  width: 90%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, border 0.3s, box-shadow 0.3s, opacity 0.3s;
   opacity: 0;
@@ -86,7 +86,7 @@
 
   .lp-service-card {
     width: 300px;
-    padding: 30px;
+    padding: 30px;    
   }
 
   .lp-service-card p {
@@ -96,6 +96,7 @@
   .lp-icons {
     gap: 20px;
   }
+
 }
 
 @media (min-width: 1024px) {
@@ -104,7 +105,7 @@
   }
 
   .lp-service-card {
-    width: 350px;
+    width: 40%;
     padding: 40px;
   }
 

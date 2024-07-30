@@ -36,7 +36,6 @@
     margin-bottom: 20px;
     font-size: 28px;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 1px;
     padding: 0 20px;
   }
@@ -47,9 +46,14 @@
     font-weight: 400;
     padding: 0 20px;
   }
+
+  .lp-schedule-icon {
+    margin: 0 10px;
+  }
+
   
  
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .lp-schedule-meeting h2 {
       font-size: 32px;
     }
@@ -59,7 +63,7 @@
     }
 
     .lp-schedule-button-container{
-      margin: 0 300px;
+      padding: 0 100px;
     }
 
   }
@@ -74,7 +78,7 @@
     }
 
     .lp-schedule-button-container{
-      margin: 0 300px;
+      margin: 0 120px;
     }
   
   }

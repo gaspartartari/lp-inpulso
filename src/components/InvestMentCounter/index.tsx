@@ -33,12 +33,12 @@ export default function InvestmentCounter() {
     return (
         <section className='lp-investment-counter'>
             <div className='lp-container'>
-                <h2>Total Investido em Anúncios</h2>
+                <h2>Total Gerado em Vendas</h2>
                 <div className='lp-counter' ref={counterRef}>
                     {startCount && (
                         <CountUp
                             start={0}
-                            end={3364000}
+                            end={12364000}
                             duration={7}
                             separator="."
                             decimals={2}

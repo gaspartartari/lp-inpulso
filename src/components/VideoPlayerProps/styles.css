@@ -3,12 +3,12 @@
     justify-content: center;
     align-items: center;
     margin: 0 0;
-    background-color: #000; /* Optional: add a background color */
-    border-radius: 8px; /* Optional: add rounded corners */
-    overflow: hidden; /* Ensures the video fits within the rounded corners */
+    background-color: var( --bg-tertiary-color: #ffffff);
 }
 
 .video-player {
     width: 100%;
     height: auto;
+    max-height: 500px; /* Reduces the video height */
 }
+

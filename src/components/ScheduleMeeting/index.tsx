@@ -1,3 +1,4 @@
+import { FaCalendarAlt } from 'react-icons/fa';
 import './styles.css';
 
 export default function ScheduleMeeting() {
@@ -16,10 +17,11 @@ export default function ScheduleMeeting() {
                         (window as any).dataLayer.push({ 'event': 'schedule_button' });
                     }} 
                     className='lp-schedule-button'>
-                        Agendar Agora
+                        Agendar Agora <FaCalendarAlt className='lp-schedule-icon' /> 
                     </a>
                 </div>
             </div>
         </section>
     );
 }
+

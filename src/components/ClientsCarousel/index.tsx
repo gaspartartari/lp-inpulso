@@ -30,7 +30,7 @@ export default function ClientsCarousel() {
             <Slider {...settings}>
                 {clients.map((client, index) => (
                     <div key={index} className="carousel-item">
-                        <img src={client} alt={`Client ${index + 1}`} />
+                        <img src={client} alt={`Cliente ${index + 1}`} />
                     </div>
                 ))}
             </Slider>

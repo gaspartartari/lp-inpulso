@@ -2,7 +2,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  margin: 0 50px;
+  margin: 0 150px;
 }
 
 .lp-whatsapp-button {
@@ -10,7 +10,7 @@
   padding: 10px 20px;
   background-color: var(--btn-primary-color);
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 8px;
@@ -29,4 +29,19 @@
 
 .lp-whatsapp-button:active {
   transform: scale(0.95);
+}
+
+.lp-whatsapp-icon {
+  margin: 0 10px;
+}
+
+@media(max-width:470px) {
+
+  .lp-whatsapp-button-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 70px;
+  }
+
 }

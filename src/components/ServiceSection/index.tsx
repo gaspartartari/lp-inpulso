@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './styles.css';
-import { faFacebook, faGoogle, faLinkedin, faPinterest, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { faHandshake, faShoppingCart, faLaptopCode, faWandMagicSparkles, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGoogle, faInstagram, faLinkedin, faPinterest, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faHandshake, faShoppingCart, faLaptopCode, faWandMagicSparkles, faMagnifyingGlass, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 export default function ServicesSection() {
     useEffect(() => {
@@ -41,7 +41,7 @@ export default function ServicesSection() {
                             <FontAwesomeIcon icon={faTiktok} size="2x" className="fa-icon" />
                             <FontAwesomeIcon icon={faLinkedin} size="2x" className="fa-icon" />
                         </div>
-                        <p>Mídia Paga</p>
+                        <p>Gestão de Mídia Paga</p>
                     </div>
                     <div className='lp-service-card'>
                         <div className="lp-icons">
@@ -72,6 +72,18 @@ export default function ServicesSection() {
                             <FontAwesomeIcon icon={faWandMagicSparkles} size="2x" className="fa-icon" />
                         </div>
                         <p>Criação e Renovação de Idenidade Visual</p>
+                    </div>
+                    <div className='lp-service-card'>
+                        <div className="lp-icons">
+                            <FontAwesomeIcon icon={faInstagram} size="2x" className="fa-icon" />
+                        </div>
+                        <p>Gestão de Mídia Social (Social Media)</p>
+                    </div>
+                    <div className='lp-service-card'>
+                        <div className="lp-icons">
+                            <FontAwesomeIcon icon={faUsers} size="2x" className="fa-icon" />
+                        </div>
+                        <p>Gestão de CRM e Automação de Fluxo de Atendimento</p>
                     </div>
                 </div>
             </div>

@@ -1,13 +1,12 @@
-
 .lp-main-text {
   text-align: center;
   padding: 25px 20px;
   background-color: var(--bg-primary-color);
-  color: var( --text-primary-color);
-
+  color: var(--text-primary-color);
 }
 
-.lp-main-text h1, .lp-main-text h2 {
+.lp-main-text h1,
+.lp-main-text h2 {
   margin: 0;
   padding: 20px 20px;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -15,47 +14,50 @@
 
 .lp-main-text h1 {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 1000;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(
+    to right,
+    var(--text-primary-color) 30%,
+    rgba(255, 255, 255, 0.5) 50%,
+    var(--text-primary-color) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: wave 5s linear infinite;
+  background-size: 200% 100%;
 }
 
-.lp-main-text h1:hover {
-  color: var(--primary-color);
-  transform: scale(1.05);
-}
 
 .lp-main-text h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
-.lp-main-text h2:hover {
-  color: var(--secondary-color);
-  transform: scale(1.05) rotate(2deg);
-}
+
 
 .lp-main-text p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   line-height: 1.6;
   padding: 0 20px;
 }
-≈
+
+@keyframes wave {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
 
 @media (max-width: 768px) {
-  .lp-main-text h1 {
-    font-size: 3rem;
-  }
 
-  .lp-main-text h2 {
-    font-size: 2.2rem;
-  }
-
-  .lp-main-text p {
-    font-size: 1.5rem;
-  }
 
 
 }
-
-

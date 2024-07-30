@@ -13,19 +13,20 @@ export default function Testimonials() {
 
                 <div className='lp-testimonials-grid'>
                     <div className='lp-testimonial'>
-                        <p>"Nossa loja online foi transformada pela InPulso. Eles gerenciaram a migração e construção de nosso e-commerce de forma impecável, resultando em uma plataforma mais eficiente e atraente. Excelente trabalho!"</p>
+                        <p>"O site tá ficando um arraso! 🚀
+                        Vocês estão de parabéns com o serviço prestado. 👏 "</p>
                         <h3>Manfrim Store</h3>
                     </div>
                     <div className='lp-testimonial'>
-                        <p>"A atenção ao cliente dos donos da InPulso é incomparável. Eles realmente se importam com nossas necessidades e sempre nos mantêm informados sobre o progresso das campanhas. É um prazer trabalhar com uma equipe tão dedicada."</p>
+                        <p>"A InPulso foi essencial para a transformação digital da Adapa Bio. Estou muito feliz com o resultado. "</p>
                         <h3>Adapa Bio</h3>
                     </div>
                     <div className='lp-testimonial'>
-                        <p>"A InPulso é excepcional na comunicação. Sempre estão disponíveis para esclarecer dúvidas e fornecer atualizações detalhadas. Trabalhar com uma equipe tão acessível e transparente faz toda a diferença."</p>
+                        <p>"Empresa excepcional na comunicação. Sempre disponíveis para esclarecer dúvidas e atualizações."</p>
                         <h3>Singa</h3>
                     </div>
                     <div className='lp-testimonial'>
-                        <p>"Trabalhar com eles não só trouxe melhores resultados para nosso negócio, mas também nos educou sobre marketing digital. É como se estivéssemos recebendo um curso de marketing de brinde enquanto alcançamos nossos objetivos."</p>
+                        <p>"Trabalhar com eles não só trouxe melhores resultados para nosso negócio, mas também nos educou sobre marketing digital."</p>
                         <h3>Café Morro Grande</h3>
                     </div>
                 </div>
