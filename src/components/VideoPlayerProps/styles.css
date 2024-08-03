@@ -3,12 +3,26 @@
     justify-content: center;
     align-items: center;
     margin: 0 0;
-    background-color: var( --bg-tertiary-color: #ffffff);
+    background-color: var( --bg-tertiary-color);
 }
 
 .video-player {
     width: 100%;
     height: auto;
     max-height: 500px; /* Reduces the video height */
+}
+
+@media (min-width: 920px){
+    .video-player-container {
+        background: var(--bg-primary-color);
+        margin: 0 20px;
+    }
+
+    .video-player {
+        border: solid;
+        border-radius: 20px;
+        color: var(--bg-primary-color);
+        margin-right: 10px;
+    }
 }
 

@@ -60,6 +60,10 @@ body {
   margin-top: 20px;
 }
 
+.lp-flex {
+  display: flex;
+}
+
 
 @media (min-width: 960px) {
 

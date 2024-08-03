@@ -18,18 +18,24 @@ import { useEffect } from 'react';
 
 export default function Home() {
 
-  useEffect (() => {
+  useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (window as any).dataLayer.push({ 'event': 'page_view' });
   }, []);
 
   return (
     <main >
-      <section id="home">
-        <CardText />
-      </section>
-      <VideoPlayer src={videoMarketing} />
-      <ScheduleButton />
+      <div className='lp-main-text-video-desktop'>
+        <div className='lp-container lp-flex-control' >
+          <section className='' id="home">
+            <CardText />
+          </section>
+          <VideoPlayer src={videoMarketing} />
+        </div>
+      </div>
+      <div className='lp-sbtn-display-control'>
+        <ScheduleButton />
+      </div>
       <section id="services">
         <ServicesSection />
       </section>
@@ -60,7 +66,7 @@ export default function Home() {
         <FAQs />
       </section>
 
- 
+
     </main>
   );
 }
