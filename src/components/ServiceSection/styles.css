@@ -100,20 +100,56 @@
 }
 
 @media (min-width: 1024px) {
+
+  .lp-services-flex-control {
+    display: flex;
+  }
+
+  .lp-services {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; /* Alinha os itens com espaço entre eles */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 50px; /* Adiciona padding ao redor da seção */
+  }
+
   .lp-services h2 {
-    font-size: 36px;
+    flex: 1; /* O título ocupará o espaço necessário */
+    margin-right: 20px; /* Espaço entre o título e o grid */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 2rem;
+    padding-top: 60px;
+  }
+
+  .lp-services-grid {
+    flex: 2; /* O grid ocupará o restante do espaço */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
   }
 
   .lp-service-card {
-    width: 40%;
-    padding: 40px;
+    width: calc(25% - 20px); /* Ajusta a largura dos cards para caber 4 por linha */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    height: auto; /* Ajusta a altura dos cards */
   }
 
   .lp-service-card p {
-    font-size: 22px;
+    font-size: 0.7rem;
+  }
+
+  .lp-icons .fa-icon {
+    color: var( --bg-primary-color) !important;
+    font-size: 15px;
   }
 
   .lp-icons {
-    gap: 30px;
+    gap: 4px;;
   }
 }
+

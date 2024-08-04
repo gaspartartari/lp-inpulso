@@ -6,7 +6,7 @@ export default function ProblemsList() {
   const problems = [
     { text: "Baixa visibilidade online", icon: faEye, highlight: "visibilidade online" },
     { text: "Dificuldade em gerar vendas", icon: faChartLine, highlight: "gerar vendas" },
-    { text: "Migração ", icon: faShoppingCart, highlight: "plataforma de ecommerce" },
+    { text: "Otimização ", icon: faShoppingCart, highlight: "de loja virutal" },
     { text: "Campanhas de marketing ineficazes", icon: faBullhorn, highlight: "marketing ineficazes" },
     { text: "Não tenho feedbacks sobre a conta", icon: faCommentDots, highlight: "feedbacks sobre a conta" },
     { text: "Pixel de  ", icon: faCogs, highlight: "rastreamento bugado" },

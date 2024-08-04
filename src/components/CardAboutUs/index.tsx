@@ -6,7 +6,7 @@ export default function AboutUs() {
     return (
         <section className='lp-about-us'>
             <div className='lp-container'>
-                <h2>Sobre Nós</h2>
+                <h2>Conheça Nossos Líderes</h2>
                 <div className='lp-about-us-content'>
                     <div className='lp-partner-card'>
                         <img src={partner1Image} alt='Murilo Galante da Silva' />

@@ -56,23 +56,24 @@
 }
 
 /* Media Queries */
+
 @media (min-width: 768px) {
-  .lp-clients-grid {
-    flex-wrap: wrap; /* Permite quebra de linha para telas maiores */
-    overflow-x: hidden; /* Remove o scroll horizontal em telas maiores */
-    justify-content: center;
-  }
-
   .lp-client-card {
-    min-width: auto;
-    width: 350px;
-    padding: 30px;
+    min-width: 33%; /* Largura mínima dos cards na versão tablet */
+  }
+  
+  .lp-client-card img {
+    max-height: 250px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .lp-client-card {
-    width: 400px;
-    padding: 40px;
+    min-width: 25%; /* Largura mínima dos cards na versão desktop */
+  }
+  
+  .lp-client-card img {
+    max-height: 200px;
   }
 }
+

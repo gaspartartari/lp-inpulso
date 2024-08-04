@@ -17,3 +17,12 @@
     height: auto;
     display: block;
 }
+
+@media (min-width: 1024px) {
+    .carousel-container {
+        width: 100%;
+        overflow: hidden;
+        background-color: white;
+        padding: 0 0;
+    }
+}

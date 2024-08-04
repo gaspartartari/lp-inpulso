@@ -30,7 +30,7 @@ export default function ServicesSection() {
 
     return (
         <section className='lp-services'>
-            <div className='lp-container'>
+            <div className='lp-container lp-services-flex-control'>
                 <h2>Estamos aqui para te ajudar com</h2>
                 <div className='lp-services-grid'>
                     <div className='lp-service-card'>
