@@ -1,5 +1,5 @@
-import { FaCalendarAlt } from 'react-icons/fa';
 import './styles.css';
+import ScheduleButton from '../ScheduleButtonProps';
 
 export default function ScheduleMeeting() {
     return (
@@ -7,19 +7,8 @@ export default function ScheduleMeeting() {
             <div className='lp-container'>
                 <h2>Agende uma Reunião Gratuita</h2>
                 <p>Converse conosco por 30 minutos e descubra como podemos ajudar o seu negócio a crescer.</p>
-                <div className='lp-schedule-button-container'>
-                    <a 
-                    href='https://calendly.com/gaspartartari' 
-                    target='_blank' 
-                    rel='noopener noreferrer'
-                    onClick={() => {
-                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                        (window as any).dataLayer.push({ 'event': 'schedule_button' });
-                    }} 
-                    className='lp-schedule-button'>
-                        Agendar Agora <FaCalendarAlt className='lp-schedule-icon' /> 
-                    </a>
-                </div>
+                    <ScheduleButton />
+             
             </div>
         </section>
     );

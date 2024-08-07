@@ -14,14 +14,6 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.lp-schedule-button-container {
-  margin: 0 20px;
-}
-
-.lp-schedule-meeting a {
-  background: var(--btn-primary-color);
-  height: 60px;
-}
 
 .lp-schedule-meeting:hover {
   transform: translateY(-10px);
@@ -43,7 +35,6 @@
 }
 
 .lp-schedule-meeting p {
-  margin-bottom: 40px;
   font-size: 18px;
   font-weight: 400;
   padding: 0 20px;
@@ -60,10 +51,6 @@
 
   .lp-schedule-meeting p {
     font-size: 20px;
-  }
-
-  .lp-schedule-button-container {
-    padding: 0 100px;
   }
 }
 
@@ -91,11 +78,7 @@
   .lp-schedule-meeting p {
     font-size: 1rem;
   }
-
-  .lp-schedule-button-container {
-    margin: 0 120px;
-  }
-
+  
   .lp-schedule-meeting a {
     background: var(--btn-primary-color);
     height: 40px;
