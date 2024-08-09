@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import './styles.css';
-import imgIcon from '../../assets/logo.png';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
