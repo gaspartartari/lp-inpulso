@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <main >
-      <div className='lp-hero' style={{ backgroundImage: 'url("src/assets/hero-bg.png")' }}>
+      <div className='lp-hero' style={{ backgroundImage: 'url("/hero-bg.png")' }}>
         <Header />
         <div className='lp-container lp-flex-control' >
           <section id="home">
