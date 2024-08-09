@@ -1,7 +1,6 @@
 .lp-main-text {
   text-align: center;
-  padding: 25px 20px;
-  background-color: var(--bg-primary-color);
+  padding: 45px 20px;
   color: var(--text-primary-color);
 }
 
@@ -40,7 +39,7 @@
 
 
 .lp-main-text p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
   line-height: 1.6;
   padding: 0 20px;
@@ -72,19 +71,20 @@
   }
 
   .lp-main-text h1 {
-    font-size: 2.3rem;
+    font-size: 3rem;
     padding: 10px 10px;
   }
 
   .lp-main-text h2 {
-    font-size: 1.3rem;
+    font-size: 2rem;
     padding: 5px 10px;
   }
 
   .lp-main-text p {
-    font-size: 01rem;
+    font-size: 1rem;
     padding-right: 60px;
     padding-left: 10px;
+   
   }
 
   .lp-main-text-sbtn-container {

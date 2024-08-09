@@ -68,12 +68,25 @@
 }
 
 @media (min-width: 992px) {
+
+  .lp-clients-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os itens quebrem linha */
+    gap: 20px;
+    justify-content: flex-start;
+    overflow-x: auto; /* Permite o scroll horizontal */
+    padding: 20px 0; /* Espaçamento para o scroll */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+
   .lp-client-card {
     min-width: 25%; /* Largura mínima dos cards na versão desktop */
   }
   
   .lp-client-card img {
-    max-height: 200px;
+    max-height: 300px;
   }
 }
 

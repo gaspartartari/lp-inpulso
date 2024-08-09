@@ -1,19 +1,21 @@
 import './styles.css';
-import AboutUs from '../../../components/CardAboutUs';
-import CardText from '../../../components/CardText';
-import ClientsCarousel from '../../../components/ClientsCarousel';
-import ClientsSection from '../../../components/ClientSection';
-import FAQs from '../../../components/FAQs';
-import InvestmentCounter from '../../../components/InvestMentCounter';
-import ProblemsList from '../../../components/ProblemList';
-import ScheduleButton from '../../../components/ScheduleButtonProps';
-import ScheduleMeeting from '../../../components/ScheduleMeeting';
-import ServicesSection from '../../../components/ServiceSection';
-import Testimonials from '../../../components/Testimonials';
-import VideoPlayer from '../../../components/VideoPlayerProps';
-import WhatsAppButton from '../../../components/WhatsAppButtonProps';
-import videoMarketing from '../../../assets/videoMarketing.mp4';
+import AboutUs from '../../components/CardAboutUs';
+import CardText from '../../components/CardText';
+import ClientsCarousel from '../../components/ClientsCarousel';
+import ClientsSection from '../../components/ClientSection';
+import FAQs from '../../components/FAQs';
+import InvestmentCounter from '../../components/InvestMentCounter';
+import ProblemsList from '../../components/ProblemList';
+import ScheduleButton from '../../components/ScheduleButtonProps';
+import ScheduleMeeting from '../../components/ScheduleMeeting';
+import ServicesSection from '../../components/ServiceSection';
+import Testimonials from '../../components/Testimonials';
+import WhatsAppButton from '../../components/WhatsAppButtonProps';
 import { useEffect } from 'react';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import VideoPlayer from '../../components/VideoPlayerProps';
+import videoMarketing from '../../assets/videoMarketing.mp4';
 
 
 export default function Home() {
@@ -25,12 +27,15 @@ export default function Home() {
 
   return (
     <main >
-      <div className='lp-main-text-video-desktop'>
+      <div className='lp-hero' style={{ backgroundImage: 'url("src/assets/hero-bg.png")' }}>
+        <Header />
         <div className='lp-container lp-flex-control' >
-          <section className='' id="home">
+          <section id="home">
             <CardText />
           </section>
-          <VideoPlayer src={videoMarketing} />
+          <div className='lp-video'>
+            <VideoPlayer src={videoMarketing} />
+          </div>
         </div>
       </div>
       <div className='lp-sbtn-display-control'>
@@ -65,7 +70,7 @@ export default function Home() {
       <section id="faqs">
         <FAQs />
       </section>
-
+      <Footer />
 
     </main>
   );

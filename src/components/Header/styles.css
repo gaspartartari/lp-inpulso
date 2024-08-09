@@ -1,11 +1,16 @@
 .lp-header {
-  background-color: var(--bg-primary-color);
   height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
  
+}
+
+.lp-header-nav-logo {
+  font-size: 2rem;
+  font-weight: 1000;
+  color: var(--text-primary-color);
 }
 
 .lp-header img {
@@ -39,10 +44,13 @@ nav {
 .lp-header-nav-links.open {
   display: flex;
   max-height: 500px; /* Ajuste conforme necessário */
+  padding-left: 370px;
+  
+
 }
 
 .lp-header-nav-links a {
-  color: white;
+  color: var(--text-primary-color);
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
@@ -56,7 +64,7 @@ nav {
 .lp-menu-icon {
   display: block;
   font-size: 24px;
-  color: white;
+  color: var(--text-primary-color);
   cursor: pointer;
 }
 

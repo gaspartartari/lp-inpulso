@@ -21,6 +21,7 @@
   --border-form-input-color: #ccc;
 
   --html-body-background: linear-gradient(135deg, #ffffff, #f0f4f8);
+  --html-body-background-test: #ffffff;
   
 }
 
@@ -40,7 +41,7 @@ a:hover {
 
 html,
 body {
-  background: var(  --html-body-background);
+  background: var(--html-body-background);
 }
 /*-----------------------------------------------------------------*/
 /* generic styles */
@@ -65,10 +66,7 @@ body {
 }
 
 
-@media (min-width: 960px) {
 
-  
-}
 
 /* Animações */
 @keyframes fadeIn {

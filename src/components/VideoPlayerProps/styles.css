@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0;
+    margin: 0;
     background-color: var( --bg-tertiary-color);
+
 }
 
 .video-player {
@@ -12,17 +13,5 @@
     max-height: 500px; /* Reduces the video height */
 }
 
-@media (min-width: 920px){
-    .video-player-container {
-        background: var(--bg-primary-color);
-        margin: 0 20px;
-    }
 
-    .video-player {
-        border: solid;
-        border-radius: 20px;
-        color: var(--bg-primary-color);
-        margin-right: 10px;
-    }
-}
 

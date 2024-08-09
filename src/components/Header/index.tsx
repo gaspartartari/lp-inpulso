@@ -33,7 +33,7 @@ export default function Header() {
         <header className='lp-header'>
             <nav className='lp-container'>
                 <div className='lp-header-nav-logo'>
-                    <NavLink to={'/home'}>  <img src={imgIcon} alt="logo" /> </NavLink>
+                    <NavLink to={'/home'} >InPulso </NavLink>
                 </div>
                 <div className={`lp-header-nav-links ${isOpen ? 'open' : ''}`}>
                     <a href="#home" onClick={(e) => handleLinkClick(e, 'home')}>Início</a>
