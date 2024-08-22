@@ -6,7 +6,10 @@ export default function AboutUs() {
     return (
         <section className='lp-about-us'>
             <div className='lp-container'>
-                <h2>Conheça Nossos Líderes</h2>
+                <h2>Sobre Nós</h2>
+                <p>Na InPulso, unimos a expertise de dois profissionais com vasta experiência no mercado para oferecer mais do que simples resultados de performance. 
+                    Valorizamos o entendimento profundo do negócio de cada cliente, pois acreditamos que essa sinergia é fundamental para alcançar resultados verdadeiramente significativos. 
+                    Nosso compromisso vai além da entrega de métricas; estamos aqui para ajudar nossos clientes a decifrar e otimizar sua presença no mundo digital, alinhada às necessidades específicas de sua operação.</p>
                 <div className='lp-about-us-content'>
                     <div className='lp-partner-card'>
                         <img src={partner1Image} alt='Murilo Galante da Silva' />

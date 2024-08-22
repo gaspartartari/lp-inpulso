@@ -7,8 +7,7 @@ export default function ScheduleMeeting() {
             <div className='lp-container'>
                 <h2>Agende uma Reunião Gratuita</h2>
                 <p>Converse conosco por 30 minutos e descubra como podemos ajudar o seu negócio a crescer.</p>
-                    <ScheduleButton />
-             
+                <ScheduleButton />
             </div>
         </section>
     );

@@ -21,7 +21,7 @@ export default function ProblemsList() {
             <FontAwesomeIcon icon={problem.icon} className="problem-icon" />
             <span>
               {problem.text.split(problem.highlight)[0]}
-              <strong >{problem.highlight}</strong>
+              <span >{problem.highlight}</span>
               {problem.text.split(problem.highlight)[1]}
             </span>
           </li>

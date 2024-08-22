@@ -8,7 +8,6 @@
 .lp-services h2 {
   margin-bottom: 30px;
   font-size: 28px;
-  font-weight: 700;
   letter-spacing: 1px;
   padding: 0 20px;
 }
@@ -31,6 +30,7 @@
   transition: transform 0.3s, border 0.3s, box-shadow 0.3s, opacity 0.3s;
   opacity: 0;
   transform: translateY(20px);
+
 }
 
 .lp-service-card.visible {
@@ -61,10 +61,9 @@
 }
 
 .lp-service-card p {
-  margin-top: 15px;
   color: var( --text-secondary-color);
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .lp-icons {
@@ -122,7 +121,7 @@
   }
 
   .lp-services-grid {
-    flex: 2; /* O grid ocupará o restante do espaço */
+    flex: 3; /* O grid ocupará o restante do espaço */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -140,16 +139,16 @@
   }
 
   .lp-service-card p {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .lp-icons .fa-icon {
     color: var( --bg-primary-color) !important;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .lp-icons {
-    gap: 4px;;
+    gap: 5px;
   }
 }
 

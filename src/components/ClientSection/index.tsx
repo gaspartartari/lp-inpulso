@@ -9,10 +9,7 @@ import client6Image from '../../assets/cliente6.jpg';
 import client7Image from '../../assets/cliente7.jpg';
 import client8Image from '../../assets/cliente8.png';
 
-
-
 export default function ClientsSection() {
-
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -34,79 +31,23 @@ export default function ClientsSection() {
             <div className='lp-container'>
                 <h2>Veja alguns de nossos cases</h2>
                 <div className='lp-clients-grid'>
-                    <div className='lp-client-card'>
-                        <a href='https://www.singapurastore.com.br' target='_blank' rel='noopener noreferrer'>
-                            <img src={client1Image} alt='Singapura Store' />
-                            <p>Singa</p>
-                            <blockquote>
-                                "Crescimento de 450% YoY gerindo CRM e Mídia Paga"
-                            </blockquote>
+                    {[{img: client1Image, name: 'Singapura Store', link: 'https://singapurastore.com/', quote: 'Crescimento de 450% YoY gerindo CRM e Mídia Paga'},
+                      {img: client2Image, name: 'Soleah', link: 'https://www.soleah.com.br/', quote: 'Correção de bugs no trackeamento e melhoria de performance'},
+                      {img: client3Image, name: 'Eulíricas', link: 'https://www.euliricas.com.br/', quote: 'Lançamento da marca no mundo dos anúncios online alcançando ROAS sustentável no primeiro mês'},
+                      {img: client4Image, name: 'Marília Chiele Joias', link: 'https://www.mariliachielejoias.com.br/', quote: 'Lançamento das primeiras campanhas de mídia paga no Google Ads, duplicando faturamento em 3 meses'},
+                      {img: client5Image, name: 'Manfrim Store', link: 'https://www.manfrimstore.com.br/', quote: '100K faturados no primeiro mês de Google Ads com ROAS de 1000%. Correção de bugs no traqueamento. Migração de plataforma de E-commerce'},
+                      {img: client6Image, name: 'Adapa Bio', link: 'https://adapabio.com/', quote: 'Criação do site na plataforma Shopify e implementação de estrutura de acompanhamento de conversão'},
+                      {img: client7Image, name: 'Miss Li', link: 'https://missli.com.br/', quote: 'Mentoria sobre anúncios online e saúde digital da empresa, correção de bugs no traqueamento e melhoria de performance'},
+                      {img: client8Image, name: 'Noda', link: 'https://nodacozinha.com.br/', quote: 'Gestão de CRM e Mídia Paga, incluindo automação de e-mail marketing'},
+                     ].map((client, index) => (
+                      <div key={index} className='lp-client-card'>
+                        <a href={client.link} target='_blank' rel='noopener noreferrer'>
+                            <img src={client.img} alt={client.name} />
+                            <p>{client.name}</p>
+                            <blockquote>{client.quote}</blockquote>
                         </a>
                     </div>
-                    <div data-aos="fade-up" className='lp-client-card'>
-                        <a href="https://www.soleah.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client2Image} alt='Soleah Bolsas' />
-                            <p>Soleah</p>
-                            <blockquote>
-                                "Correção de bugs no trackeamento e melhoria de performance"
-                            </blockquote>
-                        </a>
-                    </div>
-                    <div className='lp-client-card'>
-                        <a href="https://www.euliricas.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client3Image} alt='Eulíricas' />
-                            <p>Eulíricas</p>
-                            <blockquote>
-                                "Serviço impecável e resultados que superaram nossas expectativas."
-                            </blockquote>
-                        </a>
-                    </div>
-                    <div className='lp-client-card'>
-                        <a href="https://www.mariliachielejoias.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client4Image} alt='Marília Chiele Joias' />
-                            <p>Marilia Chiele Jóias</p>
-                            <blockquote>
-                                "Lançamento das primerias campanhas de mídia paga no Google Ads, duplicando faturamento em 3 meses"
-                            </blockquote>
-                        </a>
-                    </div>
-                    <div className='lp-client-card'>
-                        <a href="https://www.manfrimstore.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client5Image} alt='Manfrim Store' />
-                            <p>Manfrim Store</p>
-                            <blockquote>
-                                "100K faturados no primeiro mês de Google Ads com ROAS de 1000%. Correção de bugs no traqueamento.
-                                 Migracao de plataforma de E-commerce  "
-                            </blockquote>
-                        </a>
-                    </div>
-                    <div className='lp-client-card'>
-                        <a href="https://adapabio.com/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client6Image} alt='Adapa Bio' />
-                            <p>Adapa Bio</p>
-                            <blockquote>
-                                "Ciração do site na plataforma Shopify e implementação de estrutura de acompanhamento de conversão"
-                            </blockquote>
-                        </a>
-                    </div>
-                    <div className='lp-client-card'>
-                        <a href="https://missli.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client7Image} alt='Miss Li' />
-                            <p>Miss Li</p>
-                            <blockquote>
-                                "Mentoria sobre anúncios online e saúde digital da empresa, correção de bugs no traqueamento e melhoria de performance"
-                            </blockquote>
-                        </a>
-                    </div>
-                    <div className='lp-client-card'>
-                        <a href="https://nodacozinha.com.br/" target='_blank' rel='noopener noreferrer'>
-                            <img src={client8Image} alt='Noda' />
-                            <p>Noda</p>
-                            <blockquote>
-                                "Gestão de CRM e Mídia Paga, incluindo automação de e-mail marketing"
-                            </blockquote>
-                        </a>
-                    </div>
+                    ))}
                 </div>
             </div>
         </section>

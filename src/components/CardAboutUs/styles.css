@@ -11,6 +11,14 @@
     font-size: 28px;
     font-weight: 700;
   }
+
+    
+  .lp-about-us p {
+    color: var(--text-secondary-color);
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
   
   .lp-about-us-content {
     display: flex;
@@ -95,19 +103,16 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-      height: 350px;
+      height: auto;
     }
 
-    .lp-partner-card {
-      max-height: 350px;
-    }
     
     .lp-about-us h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   
     .lp-partner-card h3 {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   
     .lp-partner-card p {
@@ -115,9 +120,8 @@
     }
 
     .lp-partner-card img {
-  
-      width: 100px;
-      height: 100px;
+      width: 130px;
+      height: 130px;
 
     }
   }
